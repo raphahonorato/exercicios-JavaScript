@@ -4,10 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        h1{
+            font-size: 30px;
+            font-family: 'Comic Sans Ms';
+            color: red;
+        }
+    </style>
 </head>
 <body>
     <script>
-        
+        var nome = window.prompt('Qual é seu nome ?')
+        document.write(`<h1>Olá, ${nome} !</br> Seu nome tem ${nome.length} letras !</h1>`)//mostra quantidade de caractéres
+        document.write(`<h2>Seu nome em maiúsculo é ${nome.toUpperCase()}</br></h2>`)// tudo maiusculo
+        document.write(`<h2>Seu nome em minúsculo é ${nome.toLowerCase()}</h2>`)//tudo minusculo
     </script>
 </body>
 </html>
