@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Conversor</title>
+    <style>
+        body{
+            font: normal 18pt arial;
+            text-align: center;
+            margin-top: 100px;
+            background-color: rgb(2, 8, 32);
+            color: whitesmoke;
+        }
+        strong{
+            color: rgb(226, 50, 50);
+        }
+        input{
+            font: normal 10pt arial;
+            width: 70px;
+        }
+        div#res{
+            margin-top: 20pt;
+        }
+    </style>
+</head>
+<body>
+    <table>
+    BINÁRIO <sub>2</sub> &rarr; <input type="number" name="b2" id="b2"></br>
+    OCTAL <sub>8</sub> &rarr; <input type="number" name="b8" id="b8"></br>
+    DECIMAL <sub>10</sub> &rarr; <input type="number" name="b10" id="b10"></br>
+    EXADECIMAL <sub>16</sub> &rarr; <input type="number" name="b16" id="b16"></br>
+    </table>
+
+    <input type="button" value="Base 2" onclick="bdois()">
+    <input type="button" value="Base 8" onclick="boito()">
+    <input type="button" value="Base 16" onclick="bseis()">
+    <div id="res">Resultado</div>
+
+    <script>
+        var decimal = document.getElementById('b10')
+
+        function bdois(){
+            var num = Number(b10.value)
+            var bin = num.toString(2)
+            res.innerHTML = (`${num} na base 2 é <strong>${bin}</strong>`)
+        }
+
+    function boito(){
+        var num = Number(b10.value)
+        var octal = num.toString(8)
+        res.innerHTML = (`${num} na base 8 é <strong>${octal}</strong>`)
+        }
+
+        function bseis(){
+        var num = Number(b10.value)
+        var seis = num.toString(16)
+        res.innerHTML = (`${num} na base 16 é <strong>${seis}</strong>`)
+        }
+
+
+
+        </script>
+
+        
+        <!--<script>
+
+        function bdez(){
+        var num = Number(v1.value)
+        var decimal = parseInt(binario, 2)
+        }
+    </script>-->
+</body>
+</html>
