@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Nacionalidade</title>
+</head>
+<body>
+    <input type="text" id="txt">
+    <input type="button" value="Verificar" onclick="verificar()">
+    <div id="res"></div>
+    <script>
+        function verificar(){
+            var vtxt = document.getElementById('txt')
+            var ttxt = String(vtxt)
+            var res = document.getElementById('res')
+
+            if(vtxt == 'Brasil'){
+                res.innerHTML = 'BRAZUCA'
+            }else{
+                res.innerHTML = 'GRINGO'
+            }
+        }
+    </script>
+</body>
+</html>
