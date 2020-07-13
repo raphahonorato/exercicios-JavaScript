@@ -4,21 +4,15 @@
     <meta charset="UTF-8">
     <title>Nacionalidade</title>
 </head>
+<p id="res"></p>
 <body>
-    <input type="text" id="txt">
-    <input type="button" value="Verificar" onclick="verificar()">
-    <div id="res"></div>
     <script>
-        function verificar(){
-            var vtxt = document.getElementById('txt')
-            var ttxt = String(vtxt)
-            var res = document.getElementById('res')
-
-            if(vtxt == 'Brasil'){
-                res.innerHTML = 'BRAZUCA'
-            }else{
-                res.innerHTML = 'GRINGO'
-            }
+        var pais = prompt('nome do país: ')
+        var res = document.getElementById('res')
+        if(pais == 'Brasil' || 'brasileiro'){
+            res.innerHTML = (`brasileiro`)
+        }else{
+            res.innerHTML = (`gringo`)
         }
     </script>
 </body>
