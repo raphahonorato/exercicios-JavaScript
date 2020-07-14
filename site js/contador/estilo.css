@@ -1,0 +1,24 @@
+body {
+background: rgba(17, 92, 231, 0.74);
+font: Normal, 15px, Arial;
+}
+
+header {
+color: honeydew;
+text-align: center;
+}
+
+section {
+background: white;
+border-radius: 10px;
+padding: 10px;
+width: 500px;
+margin: auto;
+box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.418);
+}
+
+footer {
+text-align: center;
+color: honeydew;
+font-style: italic;
+}
