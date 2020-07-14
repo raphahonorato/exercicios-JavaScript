@@ -2,17 +2,26 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>Verificador de Idade</title>
     <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
-    <header>Idade alguma coisa</header>
+    <header>
+        <h1>Verificador de Idade</h1>
+    </header>
     <section>
      <div>
-        Teste
+         <p>Ano de Nascimento: <input type="number" id="txtano" name="txtano" min="1"></p>
+         <p>
+            Sexo: <input type="radio" name="radsex" id="masc" checked>
+                    <label for="masc">Masculino</label>
+                  <input type="radio" name="radsex" id="fem">
+                  <label for="fem">Feminino</label>
+        </p>
+        <p><input type="button" id="botao" value="Verificar" onclick="verificar()"></p>
      </div>
-     <div>
-        Teste
+     <div id="res">
+        <p>Preencha os dados acima para ver o resultado !</p>
      </div>   
     </section>
     <footer>
