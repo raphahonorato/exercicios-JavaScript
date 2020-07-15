@@ -15,7 +15,7 @@ function contar() {
         var f = Number(fim.value)
         var p = Number(passo.value)
         for(c = i; c <= f; c+= p){
-            res.innerHTML += (` ${c} `)
+            res.innerHTML += (`\u{1F449} ${c} `)
         }
     }
 }
