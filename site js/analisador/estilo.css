@@ -1,5 +1,6 @@
 body {
 background: rgba(17, 92, 231, 0.74);
+
 font: Normal, 15px, Arial;
 }
 
@@ -8,7 +9,9 @@ color: honeydew;
 text-align: center;
 }
 
-
+select#lista{
+width: 160px;
+}
 
 section {
 background: white;
