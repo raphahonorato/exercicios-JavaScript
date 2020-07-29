@@ -14,7 +14,7 @@ if(pos == -1){
 
 /*
 for(pos = 0; pos < a.length ; pos++){
-    console.log (`No indice ${pos}, esta o elemento ${a[pos]} `)
+    console.log (`No indice ${pos}, está o elemento ${a[pos]} `)
 }
 */
 
